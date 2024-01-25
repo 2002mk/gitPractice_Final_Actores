@@ -1,3 +1,193 @@
+Counting objects: 100% (5/5), done.
+
+E:\Desktop\git_cmd>git clone  https://github.com/2002mk/gitPractice_Final_Actores.git 
+Cloning into 'gitPractice_Final_Actores'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+E:\Desktop\git_cmd>cd gitPractice_Final_Actores
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git branch
+* main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Ragu
+  remotes/origin/Ram
+  remotes/origin/main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout ragu
+error: pathspec 'ragu' did not match any file(s) known to git
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ragu 
+Switched to a new branch 'Ragu'
+branch 'Ragu' set up to track 'origin/Ragu'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git branch
+* Ragu
+  main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git status
+On branch Ragu
+Your branch is up to date with 'origin/Ragu'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vijaya.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git add .
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git status
+On branch Ragu
+Your branch is up to date with 'origin/Ragu'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   vijaya.html
+
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git commit -m "add a parageaph"
+[Ragu b7ecf33] add a parageaph
+ 1 file changed, 3 insertions(+)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ragu 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 669 bytes | 669.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   97f96df..b7ecf33  Ragu -> Ragu
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge Ragu
+Updating 97f96df..b7ecf33
+Fast-forward
+ vijaya.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   97f96df..b7ecf33  main -> main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram
+Switched to a new branch 'Ram'
+branch 'Ram' set up to track 'origin/Ram'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git branch
+  Ragu
+* Ram
+  main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Updating 97f96df..b7ecf33
+Fast-forward
+ vijaya.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram
+Already on 'Ram'
+Your branch is ahead of 'origin/Ram' by 1 commit.
+  (use "git push" to publish your local commits)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git add .
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git commit -m "Add Phoine NUmber"
+On branch Ram
+Your branch is ahead of 'origin/Ram' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ram
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   97f96df..b7ecf33  Ram -> Ram
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git  checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge Ram  
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin main
+Everything up-to-date
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge Ram        
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git add .    
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git statues
+git: 'statues' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git status  
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   vijaya.html
+
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores> git commit -m "push to change "
+[main 0b1c2ad] push to change
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   b7ecf33..0b1c2ad  main -> main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram
+Switched to branch 'Ram'
+Your branch is up to date with 'origin/Ram'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git status
+On branch Ram
+Your branch is up to date with 'origin/Ram'.
+
+nothing to commit, working tree clean
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git log
+commit b7ecf333d330b3289628b7b2bbeb53874fb9954e (HEAD -> Ram, origin/Ram, origin/Ragu, Ragu)
+Author: 2002mk <ganesanmanisha16@gmail.com>
+Date:   Thu Jan 25 12:03:34 2024 +0530
+
+    add a parageaph
+
+commit 97f96df550e0ab7896cbe8fd192da0d52c7016e4
+Author: Manisha. G <92217036+2002mk@users.noreply.github.com>
+Date:   Thu Jan 25 11:50:35 2024 +0530
+
+:
+
 Microsoft Windows [Version 10.0.22631.3085]
 (c) Microsoft Corporation. All rights reserved.
 
@@ -44,3 +234,165 @@ E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ragu
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/2002mk/gitPractice_Final_Actores.git
    b7ecf33..0b1c2ad  Ragu -> Ragu
+Microsoft Windows [Version 10.0.22631.3085]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Desktop\git_cmd>cd gitPractice_Final_Actores
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram
+Already on 'Ram'
+Your branch is up to date with 'origin/Ram'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ram
+Everything up-to-date
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge main
+Updating b7ecf33..0b1c2ad
+Fast-forward
+ vijaya.html | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ram 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   b7ecf33..0b1c2ad  Ram -> Ram
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ragu
+Switched to branch 'Ragu'
+Your branch is up to date with 'origin/Ragu'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Updating b7ecf33..0b1c2ad
+Fast-forward
+ vijaya.html | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ragu
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   b7ecf33..0b1c2ad  Ragu -> Ragu
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git add .
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git commit -m "command almost complet" 
+[Ragu 3f604a4] command almost complet
+ 1 file changed, 46 insertions(+)
+ create mode 100644 cmd termina.txt
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin main
+Everything up-to-date
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git add .
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git commit -m "command almost complet"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main 
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge Ragu main
+Updating 0b1c2ad..3f604a4
+Fast-forward
+ cmd termina.txt | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 46 insertions(+)
+ create mode 100644 cmd termina.txt
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram
+Switched to branch 'Ram'
+Your branch is up to date with 'origin/Ram'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge Ram main
+Updating 0b1c2ad..3f604a4
+Fast-forward
+ cmd termina.txt | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 46 insertions(+)
+ create mode 100644 cmd termina.txt
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git check out     
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git add . 
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git commit -m "..."
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 837 bytes | 837.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   0b1c2ad..3f604a4  main -> main
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ragu    
+Switched to branch 'Ragu'
+Your branch is ahead of 'origin/Ragu' by 1 commit.
+  (use "git push" to publish your local commits)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull main        
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   0b1c2ad..3f604a4  Ragu -> Ragu
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram     
+Switched to branch 'Ram'
+Your branch is ahead of 'origin/Ram' by 1 commit.
+  (use "git push" to publish your local commits)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ram  
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   0b1c2ad..3f604a4  Ram -> Ram
