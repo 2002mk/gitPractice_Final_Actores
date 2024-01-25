@@ -1,0 +1,46 @@
+Microsoft Windows [Version 10.0.22631.3085]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Desktop\git_cmd>cd gitPractice_Final_Actores
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ram
+Already on 'Ram'
+Your branch is up to date with 'origin/Ram'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ram
+Everything up-to-date
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git merge main
+Updating b7ecf33..0b1c2ad
+Fast-forward
+ vijaya.html | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ram 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   b7ecf33..0b1c2ad  Ram -> Ram
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git checkout Ragu
+Switched to branch 'Ragu'
+Your branch is up to date with 'origin/Ragu'.
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git pull origin main
+From https://github.com/2002mk/gitPractice_Final_Actores
+ * branch            main       -> FETCH_HEAD
+Updating b7ecf33..0b1c2ad
+Fast-forward
+ vijaya.html | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+E:\Desktop\git_cmd\gitPractice_Final_Actores>git push origin Ragu
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/gitPractice_Final_Actores.git
+   b7ecf33..0b1c2ad  Ragu -> Ragu
